@@ -1,0 +1,59 @@
+Number of arguments: 1
+
+ ----- EXPECTED RESULT ----- 
+
+libsopranoclient.so.1.2.0
+libcollada-dom2.4-dp.so.2.4.4
+libgimpbase-2.0.so.0
+libmpi_usempif08.so
+libkio.so.5
+libhardsid-builder.so.0
+libOpenNI.jni.so.0
+libkdeclarative.so.5
+libcalligrakdchart.so.14.0.0
+libOpenColorIO.so.1
+libdfalt.so
+libaudiocdplugins.so.4
+libmediawiki.so.1.0.0
+libamarok_service_lastfm_shared.so
+libmca_common_verbs.so.7.0.0
+libreoffice
+libkjs.so.4.14.16
+libgimpconfig-2.0.so.0
+libkomsooxml.so.14.0.0
+
+--- HEX ---
+00000000  4e 75 6d 62 65 72 20 6f  66 20 61 72 67 75 6d 65  |Number of argume|
+00000010  6e 74 73 3a 20 31 0a                              |nts: 1.|
+00000017
+
+--- EXPECTED HEX ---
+00000000  6c 69 62 73 6f 70 72 61  6e 6f 63 6c 69 65 6e 74  |libsopranoclient|
+00000010  2e 73 6f 2e 31 2e 32 2e  30 0a 6c 69 62 63 6f 6c  |.so.1.2.0.libcol|
+00000020  6c 61 64 61 2d 64 6f 6d  32 2e 34 2d 64 70 2e 73  |lada-dom2.4-dp.s|
+00000030  6f 2e 32 2e 34 2e 34 0a  6c 69 62 67 69 6d 70 62  |o.2.4.4.libgimpb|
+00000040  61 73 65 2d 32 2e 30 2e  73 6f 2e 30 0a 6c 69 62  |ase-2.0.so.0.lib|
+00000050  6d 70 69 5f 75 73 65 6d  70 69 66 30 38 2e 73 6f  |mpi_usempif08.so|
+00000060  0a 6c 69 62 6b 69 6f 2e  73 6f 2e 35 0a 6c 69 62  |.libkio.so.5.lib|
+00000070  68 61 72 64 73 69 64 2d  62 75 69 6c 64 65 72 2e  |hardsid-builder.|
+00000080  73 6f 2e 30 0a 6c 69 62  4f 70 65 6e 4e 49 2e 6a  |so.0.libOpenNI.j|
+00000090  6e 69 2e 73 6f 2e 30 0a  6c 69 62 6b 64 65 63 6c  |ni.so.0.libkdecl|
+000000a0  61 72 61 74 69 76 65 2e  73 6f 2e 35 0a 6c 69 62  |arative.so.5.lib|
+000000b0  63 61 6c 6c 69 67 72 61  6b 64 63 68 61 72 74 2e  |calligrakdchart.|
+000000c0  73 6f 2e 31 34 2e 30 2e  30 0a 6c 69 62 4f 70 65  |so.14.0.0.libOpe|
+000000d0  6e 43 6f 6c 6f 72 49 4f  2e 73 6f 2e 31 0a 6c 69  |nColorIO.so.1.li|
+000000e0  62 64 66 61 6c 74 2e 73  6f 0a 6c 69 62 61 75 64  |bdfalt.so.libaud|
+000000f0  69 6f 63 64 70 6c 75 67  69 6e 73 2e 73 6f 2e 34  |iocdplugins.so.4|
+00000100  0a 6c 69 62 6d 65 64 69  61 77 69 6b 69 2e 73 6f  |.libmediawiki.so|
+00000110  2e 31 2e 30 2e 30 0a 6c  69 62 61 6d 61 72 6f 6b  |.1.0.0.libamarok|
+00000120  5f 73 65 72 76 69 63 65  5f 6c 61 73 74 66 6d 5f  |_service_lastfm_|
+00000130  73 68 61 72 65 64 2e 73  6f 0a 6c 69 62 6d 63 61  |shared.so.libmca|
+00000140  5f 63 6f 6d 6d 6f 6e 5f  76 65 72 62 73 2e 73 6f  |_common_verbs.so|
+00000150  2e 37 2e 30 2e 30 0a 6c  69 62 72 65 6f 66 66 69  |.7.0.0.libreoffi|
+00000160  63 65 0a 6c 69 62 6b 6a  73 2e 73 6f 2e 34 2e 31  |ce.libkjs.so.4.1|
+00000170  34 2e 31 36 0a 6c 69 62  67 69 6d 70 63 6f 6e 66  |4.16.libgimpconf|
+00000180  69 67 2d 32 2e 30 2e 73  6f 2e 30 0a 6c 69 62 6b  |ig-2.0.so.0.libk|
+00000190  6f 6d 73 6f 6f 78 6d 6c  2e 73 6f 2e 31 34 2e 30  |omsooxml.so.14.0|
+000001a0  2e 30 0a                                          |.0.|
+000001a3
+ ------- [ STDERR ] ------

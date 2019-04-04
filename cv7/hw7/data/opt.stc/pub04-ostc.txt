@@ -1,0 +1,13 @@
+a 1 one 
+a 2 two
+a 3 three
+a 4 four
+i 9 nine
+i 8 eight
+i 7 seven
+i 6 six
+i 5 five
+p
+g
+g
+p

@@ -1,0 +1,5 @@
+[    2.624460] ata6.00: configured for UDMA/100
+[    2.633692] scsi 5:0:0:0: CD-ROM            HL-DT-ST DVDRAM GH22NS50  TN03 PQ: 0 ANSI: 5
+[    2.657379] sr 5:0:0:0: [sr0] scsi3-mmc drive: 48x/48x writer dvd-ram cd/rw xa/form2 cdda tray
+[    2.657382] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    2.657500] sr 5:0:0:0: Attached scsi CD-ROM sr0

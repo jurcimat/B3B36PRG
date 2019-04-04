@@ -1,0 +1,30 @@
+Prvociselny rozklad cisla 1311294912498574036 je:
+2^2 x 11 x 43 x 101 x 863 x 1423 x 2111 x 2647
+Prvociselny rozklad cisla 5279650952380 je:
+2^2 x 5 x 7^2 x 1553 x 1667 x 2081
+Prvociselny rozklad cisla 40970506333095504 je:
+2^4 x 3^2 x 11 x 9029 x 34513 x 83003
+Prvociselny rozklad cisla 9223372036854775807 je:
+7^2 x 73 x 127 x 337 x 92737 x 649657
+ ------- [ STDERR ] ------
+
+ ----- EXPECTED RESULT ----- 
+
+
+--- HEX ---
+
+--- EXPECTED HEX ---
+
+ ----- EXPECTED RESULT ----- 
+
+
+--- HEX ---
+
+--- EXPECTED HEX ---
+
+ ----- EXPECTED RESULT ----- 
+
+
+--- HEX ---
+
+--- EXPECTED HEX ---

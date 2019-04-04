@@ -1,0 +1,12 @@
+QUEUE PUSH (1, 'one') RETURN VALUE 1
+QUEUE PUSH (2, 'two') RETURN VALUE 1
+QUEUE PUSH (3, 'three') RETURN VALUE 1
+QUEUE PUSH (4, 'four') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (1, 'one')
+QUEUE PRINT ITEM[1] = (2, 'two')
+QUEUE PRINT ITEM[2] = (3, 'three')
+QUEUE PRINT ITEM[3] = (4, 'four')
+QUEUE POP VALUE (1, 'one')
+QUEUE POP VALUE (2, 'two')
+QUEUE PRINT ITEM[0] = (3, 'three')
+QUEUE PRINT ITEM[1] = (4, 'four')

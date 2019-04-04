@@ -1,0 +1,12 @@
+i 1 one
+i 2 two
+i 3 three
+i 4 four
+s
+c
+i 4 four
+i 3 three
+i 2 two
+i 1 one
+s
+p

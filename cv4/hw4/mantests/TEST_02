@@ -1,0 +1,12 @@
+Number of arguments: 1
+
+ ----- EXPECTED RESULT ----- 
+
+
+--- HEX ---
+00000000  4e 75 6d 62 65 72 20 6f  66 20 61 72 67 75 6d 65  |Number of argume|
+00000010  6e 74 73 3a 20 31 0a                              |nts: 1.|
+00000017
+
+--- EXPECTED HEX ---
+ ------- [ STDERR ] ------

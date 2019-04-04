@@ -1,0 +1,120 @@
+QUEUE PUSH (1, 'one') RETURN VALUE 1
+QUEUE PUSH (2, 'two') RETURN VALUE 1
+QUEUE PUSH (3, 'three') RETURN VALUE 1
+QUEUE PUSH (4, 'four') RETURN VALUE 1
+QUEUE INSERT (9, 'nine') RETURN VALUE 1
+QUEUE INSERT (8, 'eight') RETURN VALUE 1
+QUEUE INSERT (7, 'seven') RETURN VALUE 1
+QUEUE INSERT (6, 'six') RETURN VALUE 1
+QUEUE INSERT (5, 'five') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (9, 'nine')
+QUEUE PRINT ITEM[1] = (8, 'eight')
+QUEUE PRINT ITEM[2] = (7, 'seven')
+QUEUE PRINT ITEM[3] = (6, 'six')
+QUEUE PRINT ITEM[4] = (5, 'five')
+QUEUE PRINT ITEM[5] = (1, 'one')
+QUEUE PRINT ITEM[6] = (2, 'two')
+QUEUE PRINT ITEM[7] = (3, 'three')
+QUEUE PRINT ITEM[8] = (4, 'four')
+QUEUE POP VALUE (9, 'nine')
+QUEUE POP VALUE (8, 'eight')
+QUEUE PRINT ITEM[0] = (7, 'seven')
+QUEUE PRINT ITEM[1] = (6, 'six')
+QUEUE PRINT ITEM[2] = (5, 'five')
+QUEUE PRINT ITEM[3] = (1, 'one')
+QUEUE PRINT ITEM[4] = (2, 'two')
+QUEUE PRINT ITEM[5] = (3, 'three')
+QUEUE PRINT ITEM[6] = (4, 'four')
+QUEUE INSERT (1, 'one') RETURN VALUE 1
+QUEUE INSERT (2, 'two') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (7, 'seven')
+QUEUE PRINT ITEM[1] = (6, 'six')
+QUEUE PRINT ITEM[2] = (5, 'five')
+QUEUE PRINT ITEM[3] = (2, 'two')
+QUEUE PRINT ITEM[4] = (1, 'one')
+QUEUE PRINT ITEM[5] = (1, 'one')
+QUEUE PRINT ITEM[6] = (2, 'two')
+QUEUE PRINT ITEM[7] = (3, 'three')
+QUEUE PRINT ITEM[8] = (4, 'four')
+QUEUE INSERT (1, 'one') RETURN VALUE 1
+QUEUE INSERT (3, 'three') RETURN VALUE 1
+QUEUE INSERT (3, 'three') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (7, 'seven')
+QUEUE PRINT ITEM[1] = (6, 'six')
+QUEUE PRINT ITEM[2] = (5, 'five')
+QUEUE PRINT ITEM[3] = (3, 'three')
+QUEUE PRINT ITEM[4] = (3, 'three')
+QUEUE PRINT ITEM[5] = (2, 'two')
+QUEUE PRINT ITEM[6] = (1, 'one')
+QUEUE PRINT ITEM[7] = (1, 'one')
+QUEUE PRINT ITEM[8] = (1, 'one')
+QUEUE PRINT ITEM[9] = (2, 'two')
+QUEUE PRINT ITEM[10] = (3, 'three')
+QUEUE PRINT ITEM[11] = (4, 'four')
+QUEUE PUSH (4, 'four') RETURN VALUE 1
+QUEUE PUSH (3, 'three') RETURN VALUE 1
+QUEUE PUSH (3, 'three') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (7, 'seven')
+QUEUE PRINT ITEM[1] = (6, 'six')
+QUEUE PRINT ITEM[2] = (5, 'five')
+QUEUE PRINT ITEM[3] = (3, 'three')
+QUEUE PRINT ITEM[4] = (3, 'three')
+QUEUE PRINT ITEM[5] = (2, 'two')
+QUEUE PRINT ITEM[6] = (1, 'one')
+QUEUE PRINT ITEM[7] = (1, 'one')
+QUEUE PRINT ITEM[8] = (1, 'one')
+QUEUE PRINT ITEM[9] = (2, 'two')
+QUEUE PRINT ITEM[10] = (3, 'three')
+QUEUE PRINT ITEM[11] = (4, 'four')
+QUEUE PRINT ITEM[12] = (4, 'four')
+QUEUE PRINT ITEM[13] = (3, 'three')
+QUEUE PRINT ITEM[14] = (3, 'three')
+QUEUE ERASE (3, 'three') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (7, 'seven')
+QUEUE PRINT ITEM[1] = (6, 'six')
+QUEUE PRINT ITEM[2] = (5, 'five')
+QUEUE PRINT ITEM[3] = (2, 'two')
+QUEUE PRINT ITEM[4] = (1, 'one')
+QUEUE PRINT ITEM[5] = (1, 'one')
+QUEUE PRINT ITEM[6] = (1, 'one')
+QUEUE PRINT ITEM[7] = (2, 'two')
+QUEUE PRINT ITEM[8] = (4, 'four')
+QUEUE PRINT ITEM[9] = (4, 'four')
+QUEUE ERASE (1, 'one') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (7, 'seven')
+QUEUE PRINT ITEM[1] = (6, 'six')
+QUEUE PRINT ITEM[2] = (5, 'five')
+QUEUE PRINT ITEM[3] = (2, 'two')
+QUEUE PRINT ITEM[4] = (2, 'two')
+QUEUE PRINT ITEM[5] = (4, 'four')
+QUEUE PRINT ITEM[6] = (4, 'four')
+QUEUE INSERT (1, 'one') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (7, 'seven')
+QUEUE PRINT ITEM[1] = (6, 'six')
+QUEUE PRINT ITEM[2] = (5, 'five')
+QUEUE PRINT ITEM[3] = (2, 'two')
+QUEUE PRINT ITEM[4] = (2, 'two')
+QUEUE PRINT ITEM[5] = (4, 'four')
+QUEUE PRINT ITEM[6] = (4, 'four')
+QUEUE PRINT ITEM[7] = (1, 'one')
+QUEUE INSERT (3, 'three') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (7, 'seven')
+QUEUE PRINT ITEM[1] = (6, 'six')
+QUEUE PRINT ITEM[2] = (5, 'five')
+QUEUE PRINT ITEM[3] = (3, 'three')
+QUEUE PRINT ITEM[4] = (2, 'two')
+QUEUE PRINT ITEM[5] = (2, 'two')
+QUEUE PRINT ITEM[6] = (4, 'four')
+QUEUE PRINT ITEM[7] = (4, 'four')
+QUEUE PRINT ITEM[8] = (1, 'one')
+QUEUE ERASE (4, 'four') RETURN VALUE 1
+QUEUE INSERT (4, 'four') RETURN VALUE 1
+QUEUE PRINT ITEM[0] = (7, 'seven')
+QUEUE PRINT ITEM[1] = (6, 'six')
+QUEUE PRINT ITEM[2] = (5, 'five')
+QUEUE PRINT ITEM[3] = (4, 'four')
+QUEUE PRINT ITEM[4] = (3, 'three')
+QUEUE PRINT ITEM[5] = (2, 'two')
+QUEUE PRINT ITEM[6] = (2, 'two')
+QUEUE PRINT ITEM[7] = (1, 'one')
+QUEUE CLEAR

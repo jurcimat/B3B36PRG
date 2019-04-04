@@ -1,0 +1,36 @@
+a 1
+a 2
+a 3
+a 4
+i 9
+i 8
+i 7
+i 6
+i 5
+p
+g
+g
+p
+i 1
+i 2
+p
+i 1
+i 3
+i 3
+p
+a 4
+a 3
+a 3
+p
+r 3
+p
+r 1
+p
+i 1
+p
+i 3
+p
+r 4
+i 4
+p
+c

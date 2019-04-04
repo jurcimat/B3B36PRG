@@ -1,0 +1,22 @@
+Number of arguments: 1
+
+ ----- EXPECTED RESULT ----- 
+
+xyb.c_d
+axy.c_d
+a-xyc_d
+a-bxy_d
+a-b.xyd
+a-b.cxy
+
+--- HEX ---
+00000000  4e 75 6d 62 65 72 20 6f  66 20 61 72 67 75 6d 65  |Number of argume|
+00000010  6e 74 73 3a 20 31 0a                              |nts: 1.|
+00000017
+
+--- EXPECTED HEX ---
+00000000  78 79 62 2e 63 5f 64 0a  61 78 79 2e 63 5f 64 0a  |xyb.c_d.axy.c_d.|
+00000010  61 2d 78 79 63 5f 64 0a  61 2d 62 78 79 5f 64 0a  |a-xyc_d.a-bxy_d.|
+00000020  61 2d 62 2e 78 79 64 0a  61 2d 62 2e 63 78 79 0a  |a-b.xyd.a-b.cxy.|
+00000030
+ ------- [ STDERR ] ------
