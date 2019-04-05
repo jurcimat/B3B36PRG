@@ -85,17 +85,126 @@ _Bool push(void *queue, void *entry){
 }
 
 void* pop(void *queue){
-	return NULL;
+	if (((linked_list*)queue)->num_of_items <= 0){
+		return NULL;
+	}
+	if (((linked_list*)queue)->num_of_items == 1){
+		void* data = ((linked_list*)queue)->first->data;
+		free(((linked_list*)queue)->first);
+		((linked_list*)queue)->first = NULL;
+		((linked_list*)queue)->last = NULL;
+		((linked_list*)queue)->num_of_items = 0;
+		return data;
+	}
+	linked_chain* temp = ((linked_list*)queue)->first->next_list;
+	void* data = ((linked_list*)queue)->first->data;
+	free(((linked_list*)queue)->first);
+	((linked_list*)queue)->first = temp;
+	temp->prev_list = NULL;
+	((linked_list*)queue)->num_of_items--;
+	return data;
 }
 
 _Bool insert(void *queue, void *entry){
-	return 0;
+	int (*compare_ptr)(const void *, const void *) = (((linked_list*)queue)->compare_ptr);
+	if (entry == NULL){
+		return false;
+	}
+	if (((linked_list*)queue)->num_of_items == 0){
+		push(queue,entry);	
+		return true;
+	}
+	else if ((*compare_ptr)(((linked_list*)queue)->first->data,entry) <= 0){
+		linked_chain *temp = (linked_chain*)malloc(sizeof(linked_chain));
+		temp->data = entry;
+		temp->next_list = (((linked_list*)queue)->first);
+		temp->prev_list = NULL;
+		temp->index = 0;
+		(((linked_list*)queue)->first)->prev_list = temp;
+		(((linked_list*)queue)->first) = temp;
+		((linked_list*)queue)->num_of_items++;
+		temp = NULL;
+		return true;
+	} else {
+		for (linked_chain* iter = (((linked_list*)queue)->first) ; iter != NULL ; iter = iter->next_list){
+			if ((*compare_ptr)(iter->data,entry) <= 0){
+				linked_chain *temp = (linked_chain*)malloc(sizeof(linked_chain));
+				temp->data = entry;
+				temp->next_list = iter;
+				temp->prev_list = iter->prev_list;
+				temp->index = iter->index - 1;
+				iter->prev_list->next_list = temp;
+				iter->prev_list = temp;
+				((linked_list*)queue)->num_of_items++;
+				temp = NULL;
+				return true;
+			}
+		}
+		if ((*compare_ptr)(((linked_list*)queue)->last->data,entry) >= 0){
+			linked_chain* temp = (linked_chain*)malloc(sizeof(linked_chain));
+			temp->data = entry;
+			temp->prev_list = ((linked_list*)queue)->last;
+			temp->next_list = NULL;
+			temp->index = ((linked_list*)queue)->last->index + 1;
+			((linked_list*)queue)->last->next_list = temp;
+			((linked_list*)queue)->last = temp;
+			((linked_list*)queue)->num_of_items++;
+			temp = NULL;
+			return true;
+		}
+	return false;
+	
+	}
+	
 }
 _Bool erase(void *queue, void *entry){
-	return 0;
+	if (((linked_list*)queue)->num_of_items == 0){
+		return false;	
+	}
+	int found_erased = 0;
+	linked_chain *iter = ((linked_list*)queue)->first;
+	void (*clear_ptr)(void*) = (((linked_list*)queue)->clear_ptr);
+	int (*compare_ptr)(const void *, const void *) = (((linked_list*)queue)->compare_ptr);
+	while (iter){
+		linked_chain *temp = iter->next_list;
+		if ((*compare_ptr)(iter->data,entry) == 0){
+			if (iter->prev_list == NULL){
+				((linked_list*)queue)->first = iter->next_list;
+			} else {
+				iter->prev_list->next_list = iter->next_list;			
+			}
+			if (iter->next_list == NULL){
+				((linked_list*)queue)->last = iter->prev_list;
+			} else {
+				iter->next_list->prev_list = iter->prev_list;			
+			}
+			(*clear_ptr)(iter->data);
+			free(iter);
+			((linked_list*)queue)->num_of_items--;
+			found_erased++;			
+		}
+		iter = temp;
+	}
+	if (found_erased == 0){
+		return false;
+	}
+	return true;	
 }
 
 void* getEntry(const void *queue, int idx){
+	if (idx >= 0 && idx < ((linked_list*)queue)->num_of_items){
+		int counter = 0;
+		linked_chain *iterative = ((linked_list*)queue)->first;
+		while (iterative){
+			linked_chain *temp = iterative->next_list;
+			if (counter == idx){
+				return iterative->data;
+			}
+			counter++;
+			iterative = temp;		
+		}
+	
+	}
 	return NULL;
 }
 int size(const void *queue){
